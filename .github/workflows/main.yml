@@ -4,7 +4,6 @@ name: CI
 
 # Controls when the action will run. Triggers the workflow on push or
 # events but only for the master branch
-
 on:
   push:
     branches: [ master ]
@@ -13,12 +12,12 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially
 jobs:
-# This workflow contains a single job called "build"
+  # This workflow contains a single job called "build"
   build:
-  # The type of runner that the job will run on
+    # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
-  # Steps represent a sequence of tasks that will be executed as part of
+    # Steps represent a sequence of tasks that will be executed as part of
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job
     - uses: actions/checkout@v2
